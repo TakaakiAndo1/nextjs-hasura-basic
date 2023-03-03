@@ -9,15 +9,15 @@ export const GET_USERS = gql`
     }
   }
 `
-// export const GET_USERS_LOCAL = gql`
-//   query GetUsers {
-//     users(order_by: { created_at: desc }) @client {
-//       id
-//       name
-//       created_at
-//     }
-//   }
-// `
+export const GET_USERS_LOCAL = gql`
+  query GetUsers {
+    users(order_by: { created_at: desc }) @client {
+      id
+      name
+      created_at
+    }
+  }
+`
 export const GET_USERIDS = gql`
   query GetUserIds {
     users(order_by: { created_at: desc }) {
